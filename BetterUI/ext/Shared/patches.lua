@@ -2,17 +2,9 @@ class 'patches'
 
 
 function patches:__init()
-	self:RegisterVars()
 	self:RegisterEvents()
 end
 
-function patches:RegisterVars()
-	self.jumpHeight = 2
-	self.moveVelocityMultiplier = 1
-	self.sprintMultiplier = 2
-	self.freeFallVelocity = 10000000
-	self.fallingMultiplier = 0
-end
 function patches:RegisterEvents()
 	self.m_ReadInstanceEvent = Events:Subscribe('Partition:ReadInstance', self, self.ReadInstance)
 end

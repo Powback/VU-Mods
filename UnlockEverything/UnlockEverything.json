@@ -1,0 +1,9 @@
+{
+	"Name": "UnlockEverything",
+	"Authors": [ "Powback" ],
+	"Description": "Unlocks everything, even DICE-only weapons and attachments",
+	"URL": "",
+	"Version": 1,
+	"HasWebUI": false,
+	"HasVeniceEXT": true
+}
