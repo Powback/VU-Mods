@@ -14,5 +14,5 @@ ____
 Run faster! Jump higher!
 
 ____
-#UnlockEverything
+#UnlockAll
 Unlocks everything, even DICE-only weapons
