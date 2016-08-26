@@ -112,20 +112,20 @@ function patches:ReadInstance(p_Instance, p_Guid)
 
 	 
 
-	if p_Guid == Guid("5917C5BE-142C-498F-9EA0-CCC6211746D2", 'D') then -- No fall damage
-		local s_Instance = CollisionData(p_Instance)
-		s_Instance:GetDamageAtVerticalVelocityAt(0).value = s_Instance:GetDamageAtVerticalVelocityAt(0).value * self.sizeMultiplier
-		s_Instance:GetDamageAtVerticalVelocityAt(1).value = s_Instance:GetDamageAtVerticalVelocityAt(1).value * self.sizeMultiplier
-		s_Instance:GetDamageAtVerticalVelocityAt(2).value = s_Instance:GetDamageAtVerticalVelocityAt(2).value * self.sizeMultiplier
-		s_Instance:GetDamageAtVerticalVelocityAt(3).value = s_Instance:GetDamageAtVerticalVelocityAt(3).value * self.sizeMultiplier
-		s_Instance:GetDamageAtVerticalVelocityAt(4).value = s_Instance:GetDamageAtVerticalVelocityAt(4).value * self.sizeMultiplier
+if p_Guid == Guid("5917C5BE-142C-498F-9EA0-CCC6211746D2", 'D') then -- No fall damage
+        local s_Instance = CollisionData(p_Instance)
+        s_Instance:GetDamageAtVerticalVelocityAt(0).value = 0
+        s_Instance:GetDamageAtVerticalVelocityAt(1).value = 0
+        s_Instance:GetDamageAtVerticalVelocityAt(2).value = 0
+        s_Instance:GetDamageAtVerticalVelocityAt(3).value = 0
+        s_Instance:GetDamageAtVerticalVelocityAt(4).value = 0
 
-		s_Instance:GetDamageAtHorizVelocityAt(0).value = s_Instance:GetDamageAtVerticalVelocityAt(0).value * self.sizeMultiplier
-		s_Instance:GetDamageAtHorizVelocityAt(1).value = s_Instance:GetDamageAtVerticalVelocityAt(1).value * self.sizeMultiplier
-		s_Instance:GetDamageAtHorizVelocityAt(2).value = s_Instance:GetDamageAtVerticalVelocityAt(2).value * self.sizeMultiplier
-		s_Instance:GetDamageAtHorizVelocityAt(3).value = s_Instance:GetDamageAtVerticalVelocityAt(3).value * self.sizeMultiplier
-		s_Instance:GetDamageAtHorizVelocityAt(4).value = s_Instance:GetDamageAtVerticalVelocityAt(4).value * self.sizeMultiplier
-	end
+        s_Instance:GetDamageAtHorizVelocityAt(0).value = 0
+        s_Instance:GetDamageAtHorizVelocityAt(1).value = 0
+        s_Instance:GetDamageAtHorizVelocityAt(2).value = 0
+        s_Instance:GetDamageAtHorizVelocityAt(3).value = 0
+        s_Instance:GetDamageAtHorizVelocityAt(4).value = 0
+    end
 end
 
 g_patches = patches()
